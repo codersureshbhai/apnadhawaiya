@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhawaiya Village</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        DHAWAIYA
+    </header>
+    <div class="logo">
+        <img src="logo.jpg" alt="Dhawaiya Logo" width="200" height="200">
+    </div>
+    <button onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+    <div class="content-section">
+        <h2>Welcome to Dhawaiya Village</h2>
+        <p>Explore the beauty, culture, and life of our village through images and videos.</p>
+        <div class="gallery">
+            <!-- 10 Sample images -->
+            <img src="point.png" alt="Image 1" onclick="openLightbox(this)">
+            <img src="school.png" alt="Image 2" onclick="openLightbox(this)">
+            <!-- Add more images as needed -->
+            <!-- 10 Sample videos -->
+            <video controls onclick="openLightbox(this)">
+                <source src="dh.mp4" type="video/mp4">
+            </video>
+            <video controls onclick="openLightbox(this)">
+                <source src="ma.mp4" type="video/mp4">
+            </video>
+            <!-- Add more videos as needed -->
+        </div>
+    </div>
+
+    <!-- Lightbox for showing images/videos in larger view -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="">
+        <video id="lightbox-video" controls>
+            <source src="">
+        </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
