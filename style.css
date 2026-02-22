@@ -164,3 +164,18 @@ body.dark-mode button:hover {
 .insta-btn:hover {
     background-color: #c0275a;
 }
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #0d0d0d;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    /* Only Grid Lines */
+    background-image: 
+        linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);
+
+    background-size: 40px 40px;
+}
