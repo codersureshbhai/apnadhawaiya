@@ -179,3 +179,42 @@ body {
 
     background-size: 40px 40px;
 }
+
+.footer-section {
+    background: transparent; 
+    padding: 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: left;
+}
+
+.footer-links {
+    color: #555; /* Dot (.) ka color thoda light rakha hai */
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    /* Underline hatane ke liye */
+    text-decoration: none; 
+    
+    /* Black background par achha lagne wala color (Light Gold/Cream) */
+    color: #e2b04a; 
+    
+    margin: 0 5px;
+    transition: 0.3s; /* Smooth color change ke liye */
+}
+
+.footer-links a:hover {
+    /* Hover karne par text thoda bright white hoga */
+    color: #ffffff; 
+    text-decoration: none; /* Hover par bhi underline nahi dikhegi */
+}
+
+.ad-icon {
+    font-size: 10px;
+    border: 1px solid #e2b04a;
+    color: #e2b04a;
+    padding: 0 3px;
+    border-radius: 2px;
+    vertical-align: middle;
+}
