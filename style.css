@@ -137,3 +137,10 @@ body.dark-mode button:hover {
 }
 
 /* csss update logo */
+.logo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #333;   /* optional border */
+}
