@@ -1,96 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhawaiya Village</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-    <div class="logo">
-        <img src="logo.jpg" alt="Dhawaiya Logo" width="200" height="200">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+  </head>
+  <body>
+    <div class="form">
+      <!-- Email  -->
+      <div class="email">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Write your email"
+        />
+      </div>
+      <!-- passWord -->
+      <div class="pass">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+        <p id="error" style="color:red;"></p>
+      </div>
+      
+
+      <!-- Sign Up button -->
+      <button id="submit-btn" onclick="signIn()">Sign In</button>
     </div>
 
-<div class="instagram-section">
-    <a href="https://www.instagram.com/apnadhawaiya/" 
-       target="_blank" 
-       class="insta-btn">
-       Follow for latest updates
-    </a>
-</div>
-    
-   
-    <div class="content-section">
-        <h2>Welcome to Dhawaiya Village</h2>
-        <p>Explore the beauty, culture, and life of our village through images and videos.</p>
-        <div class="gallery">
-            <!-- 10 Sample images -->
-            <img src="point.png" alt="Image 1" onclick="openLightbox(this)">
-            <img src="school.png" alt="Image 2" onclick="openLightbox(this)">
-            <!-- Add more images as needed -->
-            <!-- 10 Sample videos -->
-            <video controls onclick="openLightbox(this)">
-                <source src="dh.mp4" type="video/mp4">
-            </video>
-            <video controls onclick="openLightbox(this)">
-                <source src="ma.mp4" type="video/mp4">
-            </video>
-             <video controls onclick="openLightbox(this)">
-                <source src="0222(2).mp4" type="video/mp4">
-            </video>
-             <video controls onclick="openLightbox(this)">
-                <source src="reels.mp4" type="video/mp4">
-            </video>
-            <!-- Add more videos as needed -->
-        </div>
-    </div>
-<div>    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14565.882513240887!2d85.90298999999999!3d24.120105000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f38aee9208f97d%3A0x7c047a50fe96bbae!2sDhawaiya%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1730032459049!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
- </div>
-      <div class="links-container">
-
-  <a href="https://www.youtube.com/@UTTARPRADESHVIDHANSABHA" class="btn" target="_blank">
-    UTTAR PRADESH VIDHAN SABHA
-  </a><br>
-
-  <a href="https://www.youtube.com/@SansadTV/playlists" class="btn" target="_blank">
-    Sansad TV
-  </a><br>
-
-  <a href="https://www.youtube.com/@BiharVidhanSabhaTV/streams" class="btn" target="_blank">
-    Bihar
-  </a><br>
-
-  <a href="https://www.youtube.com/@jharkhandvidhansabhatv/streams" class="btn" target="_blank">
-    Jharkhand
-  </a><br>
-
-  <a href="https://example.com" class="btn" target="_blank">
-    Click Here
-  </a><br>
-
-</div>
-
-    <!-- Lightbox for showing images/videos in larger view -->
-    <div id="lightbox" class="lightbox">
-        <span class="close" onclick="closeLightbox()">&times;</span>
-        <img id="lightbox-img" src="">
-        <video id="lightbox-video" controls>
-            <source src="">
-        </video>
-    </div>
-<footer class="footer-section">
-    <div class="footer-links">
-        <a href="Privac.html">Privacy</a> · 
-        <a href="term.html">Terms</a> · 
-        <a href="term">Advertising</a> · 
-       
-    </div>
-    <div class="footer-links">
-        <a href="https://forms.gle/7Ved3rWabdpWoVE78" target="_blank">Feedback</a> · 
-       
-    </div>
-</footer>
-    <script src="script.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
+
