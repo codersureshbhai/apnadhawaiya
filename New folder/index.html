@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Apna Dhawaiya</title>
+
+<style>
+body {
+  margin: 0;
+  background-color: #0b0f8f;
+  font-family: Arial;
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  padding: 20px;
+}
+
+.logo {
+  border: 3px solid white;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+/* Sections */
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+  align-items: flex-start; /* important */
+}
+
+.section {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* SAME HEIGHT HEADING */
+.section h3 {
+  min-height: 40px;
+}
+
+/* BOX */
+.box {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 3px solid white;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.box iframe,
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* LIST */
+ul {
+  text-align: left;
+  min-height: 80px; /* important for equal spacing */
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">
+    <img src="logo.jpg">
+  </div>
+  <div class="title">apnadhawaiya</div>
+</div>
+
+<div class="container">
+
+  <!-- LEFT -->
+  <div class="section">
+    <h3>Thought</h3>
+
+    <ul>
+      <li>Time manage nahi ho raha</li>
+      <li>Focus jaldi toot jata hai</li>
+      <li>Overthinking ho rahi hai</li>
+    </ul>
+
+    <div class="box">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eNXqXSHLdBQ?si=r3CYtlq6-oXCUx7B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+
+    <div class="box">
+      <img src="https://picsum.photos/300/200">
+    </div>
+  </div>
+
+  <!-- MIDDLE -->
+  <div class="section">
+    <h3>Content</h3>
+
+    <ul>
+      <li>Learning videos</li>
+      <li>Motivation clips</li>
+      <li>Real examples</li>
+    </ul>
+
+    <div class="box">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID2"></iframe>
+    </div>
+
+    <div class="box">
+      <img src="https://picsum.photos/301/200">
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="section">
+    <h3>Solution</h3>
+
+    <ul>
+      <li>Daily 1 hour focused study karo</li>
+      <li>Mobile distractions hatao</li>
+      <li>Small goals set karo</li>
+    </ul>
+
+    <div class="box">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID3"></iframe>
+    </div>
+
+    <div class="box">
+      <img src="https://picsum.photos/302/200">
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
